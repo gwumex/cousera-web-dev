@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- <!DOCTYPE html>
+<html lang="en" >
 
 <head>
         <!-- Required meta tags always come first -->
@@ -27,7 +27,7 @@
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active"><a href="#" class="nav-link"><span class="fa fa-home fa-lg"></span> Home</a></li>
                     <li class="nav-item"><a href="./about.html" class="nav-link"><span class="fa fa-info fa-lg"></span>About</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link"><span class="fa fa-list fa-lg"></span> Menu</a></li>
+                    <li class="nav-item"><a href="#reserve" class="nav-link"><span class="fa fa-list fa-lg"></span> Menu</a></li>
                     <li class="nav-item"><a href="./contactus.html" class="nav-link"><span class="fa fa-address-card fa-lg"></span>Contact</a></li>
                 </ul>
             </div>
@@ -46,7 +46,12 @@
                 <div class="col-12 col-sm align-self-center">
                     <img src="img/logo.png" alt="" class="img-fluid">
                 </div>
+                <div class="col-md-4 offset-md-1">
+                    <!--assignment 2-->
+                    <a href="#reserve" class="btn btn-primary">Reserve A Table</a>
+                </div>
             </div>
+                          
         </div>
     </header>
 
@@ -62,20 +67,24 @@
                         <h2 class="mt-0">Uthappizza <span class="badge-danger">HOT</span> <span class="badge-pill badge-secondary col-12 sm-mt-3">$4.99</span></h2>
                         <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                     </div>
-                 
-                </div>
-                
+                </div>               
             </div>
         </div>
 
-
+        <!--assignment 3-->
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-first col-md-3">
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col col-sm order-sm-last col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <div class="media">
+                    <div class="media-body">
+                        <h2>Weekend Grand Buffet<span class="badge-danger">HOT</span></h2>
+                        <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                        </div>
+                <img src="img/buffet.png" alt="" class="d-flex ml-1 mr-3 align-self-center img-thumbnail">
+
+                </div>
             </div>
         </div>
 
@@ -95,7 +104,76 @@
               
             </div>
         </div>
-    </div>
+        <!--assignment 1-->
+        <div class="col-sm-12 col-md-8 offset-md-2 mb-3">
+            <div id="reserve" class="card bg-light">
+                <h3 class="card-header bg-success text-white col-12">Reserve a table</h3>           
+                <div class="card-body">
+                        <form action="">            
+                                    <div class="form-group row">
+                                        <h3 class="col-3 col-form-label"><strong>Number of guests</strong></h3>
+                                        <div class="form-check d-flex">
+                                            <div class="form-check mr-2">
+                                                <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                <label class="form-check-label " for="flexRadioDefault1">
+                                                  1
+                                                </label>
+                                              </div>
+                                              <div class="form-check mr-2">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                  2
+                                                </label>
+                                              </div>
+                                              <div class="form-check mr-2">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+                                                <label class="form-check-label" for="flexRadioDefault3">
+                                                  3
+                                                </label>
+                                              </div>
+                                              <div class="form-check mr-2">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" checked>
+                                                <label class="form-check-label" for="flexRadioDefault4">
+                                                  4
+                                                </label>
+                                              </div>
+                                              <div class="form-check mr-2">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5" checked>
+                                                <label class="form-check-label" for="flexRadioDefault5">
+                                                  5
+                                                </label>
+                                              </div>
+                                              <div class="form-check mr-2">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6" checked>
+                                                <label class="form-check-label" for="flexRadioDefault6">
+                                                  6
+                                                </label>
+                                              </div>
+                                        </div>
+                                        
+                                </div>
+                                <div class="form-group row">
+                                    <label for="time" class="col-3 col-md-3 col-form-label"><strong>Date and Time</strong></label>
+                                    <div class="col-4 col-md-4">
+                                        <input type="date" class="form-control" id="date" name="date" placeholder="date">
+                                    </div>
+                                    <div class="col-4 col-md-4">
+                                        <input type="time" class="form-control" id="time" name="time" placeholder="Time">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="offset-md-2 col-md-10">
+                                        <button type="submit" class="btn btn-primary">
+                                            Reserve
+                                        </button>
+            
+                                    </div>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+      </div>
 
     <footer>
         <div class="container">
