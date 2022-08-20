@@ -39,6 +39,7 @@
         </div>
     </nav>
 
+
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
@@ -78,6 +79,96 @@
         </div>
     </div>
 
+    <!--assignment week 3 task-->
+    <div id="reserveModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content ">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal">
+                    &times;
+                  </button>   
+                <div class="modal-header"> 
+                    <h3 class="card-header bg-success text-white col-12">Reserve a table</h3>   
+                              
+                </div>
+                <div class="modal-body g-0">
+                    <form action="">            
+                        <div class="form-group row">
+                            <h3 class="col-3 col-form-label"><strong>Number of guests</strong></h3>
+                            <div class="form-check d-flex">
+                                <div class="form-check mr-2">
+                                    <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label " for="flexRadioDefault1">
+                                      1
+                                    </label>
+                                  </div>
+                                  <div class="form-check mr-2">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                      2
+                                    </label>
+                                  </div>
+                                  <div class="form-check mr-2">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+                                    <label class="form-check-label" for="flexRadioDefault3">
+                                      3
+                                    </label>
+                                  </div>
+                                  <div class="form-check mr-2">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" checked>
+                                    <label class="form-check-label" for="flexRadioDefault4">
+                                      4
+                                    </label>
+                                  </div>
+                                  <div class="form-check mr-2">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5" checked>
+                                    <label class="form-check-label" for="flexRadioDefault5">
+                                      5
+                                    </label>
+                                  </div>
+                                  <div class="form-check mr-2">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6" checked>
+                                    <label class="form-check-label" for="flexRadioDefault6">
+                                      6
+                                    </label>
+                                  </div>
+                            </div>
+                            
+                    </div>
+                    <!--assignment  task two week 3 -->
+                    <div class="form-group row g-7">
+                        <label for="section" class="col-3 col-md-3 col-form-label"><strong>section</strong></label>
+                        <div class="col-4 col-md-4">
+                            <button type="button" class="form-control btn bg-success ml-0" id="section" name="section">Non-smoking</button>
+                        </div>
+                        <div class="col-4 col-md-4">
+                            <button type="button" class="form-control btn-danger" id="section" name="section">Smoking</button>
+                        </div>
+                    </div>
+                  
+                    <div class="form-group row">
+                        <label for="time" class="col-3 col-md-3 col-form-label"><strong>Date and Time</strong></label>
+                        <div class="col-4 col-md-4">
+                            <input type="date" class="form-control" id="date" name="date" placeholder="date">
+                        </div>
+                        <div class="col-4 col-md-4">
+                            <input type="time" class="form-control" id="time" name="time" placeholder="Time">
+                        </div>
+                    </div>
+                    <div class="form-group row g-0">
+                        <div class="col-md-5">
+                            <button type="submit" class="btn btn-primary">
+                                Reserve
+                            </button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>   
+                        </div>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -90,15 +181,14 @@
                 </div>
                 <div class="col-md-4 offset-md-1">
                     <!--assignment week2 2-->
-                    <a href="#reserve" class="btn btn-block nav-link btn-warning" 
-                    data-joggle="tooltip"  data-html="true" 
-                    title="Or call us at <br><strong>+852 12345678</strong>" 
+                    <a class="btn btn-block nav-link btn-warning" 
+                    data-toggle="modal" data-target="#reserveModal" 
                     data-placement="bottom">Reserve A Table</a>
                 </div>
             </div>
                           
         </div>
-    </header>
+    </header>  
     <!--carousel-->
     <div class="container">
         <div class="row row-content">
@@ -151,69 +241,11 @@
         <!--assignment 1-->
         <div class="col-sm-12 col-md-8 offset-md-2 mb-3">
             <div id="reserve" class="card bg-light">
-                <h3 class="card-header bg-success text-white col-12">Reserve a table</h3>           
+                
                 <div class="card-body">
-                        <form action="">            
-                                    <div class="form-group row">
-                                        <h3 class="col-3 col-form-label"><strong>Number of guests</strong></h3>
-                                        <div class="form-check d-flex">
-                                            <div class="form-check mr-2">
-                                                <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                                <label class="form-check-label " for="flexRadioDefault1">
-                                                  1
-                                                </label>
-                                              </div>
-                                              <div class="form-check mr-2">
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                                <label class="form-check-label" for="flexRadioDefault2">
-                                                  2
-                                                </label>
-                                              </div>
-                                              <div class="form-check mr-2">
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
-                                                <label class="form-check-label" for="flexRadioDefault3">
-                                                  3
-                                                </label>
-                                              </div>
-                                              <div class="form-check mr-2">
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" checked>
-                                                <label class="form-check-label" for="flexRadioDefault4">
-                                                  4
-                                                </label>
-                                              </div>
-                                              <div class="form-check mr-2">
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5" checked>
-                                                <label class="form-check-label" for="flexRadioDefault5">
-                                                  5
-                                                </label>
-                                              </div>
-                                              <div class="form-check mr-2">
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6" checked>
-                                                <label class="form-check-label" for="flexRadioDefault6">
-                                                  6
-                                                </label>
-                                              </div>
-                                        </div>
-                                        
-                                </div>
-                                <div class="form-group row">
-                                    <label for="time" class="col-3 col-md-3 col-form-label"><strong>Date and Time</strong></label>
-                                    <div class="col-4 col-md-4">
-                                        <input type="date" class="form-control" id="date" name="date" placeholder="date">
-                                    </div>
-                                    <div class="col-4 col-md-4">
-                                        <input type="time" class="form-control" id="time" name="time" placeholder="Time">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <div class="offset-md-2 col-md-10">
-                                        <button type="submit" class="btn btn-primary">
-                                            Reserve
-                                        </button>
-            
-                                    </div>
-                                </div>
-                        </form>
+                       
+
+
                     </div>
                 </div>
             </div>
@@ -264,11 +296,6 @@
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script>
-            $(document).ready(function(){
-                $('[data-toggle="tooltip"]').tooltip();
-            });
-        </script>
 </body>
  
 </html>
