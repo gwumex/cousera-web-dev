@@ -135,14 +135,16 @@
                             
                     </div>
                     <!--assignment  task two week 3 -->
-                    <div class="form-group row g-7">
-                        <label for="section" class="col-3 col-md-3 col-form-label"><strong>section</strong></label>
-                        <div class="col-4 col-md-4">
-                            <button type="button" class="form-control btn bg-success ml-0" id="section" name="section">Non-smoking</button>
-                        </div>
-                        <div class="col-4 col-md-4">
-                            <button type="button" class="form-control btn-danger" id="section" name="section">Smoking</button>
-                        </div>
+                    <div class="form-group row">
+                        <label for="options" class="col-3 col-md-3 col-form-label"><strong>section</strong></label>
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-secondary bg-success active">
+                              <input type="radio" name="options" id="option1" autocomplete="off" checked> No-Smoking
+                            </label>
+                            <label class="btn btn-secondary badge-danger">
+                              <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
+                            </label>
+                          </div>
                     </div>
                   
                     <div class="form-group row">
