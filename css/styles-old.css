@@ -56,6 +56,6 @@ body{
 }
 #carouselButton{
     right: 0px;
-
+    position: relative;
     bottom: 0px;
 }
